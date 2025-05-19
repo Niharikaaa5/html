@@ -1,0 +1,3 @@
+Syntax for jQuery
+
+$(selector).action();

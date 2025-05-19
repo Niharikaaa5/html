@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic jQuery Example</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #message {
+      font-size: 24px;
+      color: darkslategray;
+    }
+    #myButton {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="message">Welcome to jQuery!</h1>
+  <button id="myButton">Click Me</button>
+  <script>
+    // jQuery code
+    $(document).ready(function() {
+      $('#myButton').click(function() {
+        // Change the text
+        $('#message').text('You clicked the button!');
+
+        // Change the color
+        $('#message').css('color', 'crimson');
+      });
+    });
+  </script>
+</body>
+</html>
